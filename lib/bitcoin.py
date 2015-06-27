@@ -35,7 +35,7 @@ DUST_THRESHOLD = 0
 DUST_SOFT_LIMIT = 2000
 MIN_RELAY_TX_FEE = 1000
 RECOMMENDED_FEE = 1000
-COINBASE_MATURITY = 10
+COINBASE_MATURITY = 1
 
 # AES encryption
 EncodeAES = lambda secret, s: base64.b64encode(aes.encryptData(secret,s))
