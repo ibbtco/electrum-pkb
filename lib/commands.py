@@ -284,8 +284,8 @@ class Commands:
             out = "Error: Keypair import failed: " + str(e)
         return out
 
-    def sweep(self, privkey, to_address, fee = 0.0001):
-        fee = int(Decimal(fee)*100000000)
+    def sweep(self, privkey, to_address, fee = 0.00001):
+        fee = int(Decimal(fee)*1000)
         return Transaction.sweep([privkey], self.network, to_address, fee)
 
     def signmessage(self, address, message):
