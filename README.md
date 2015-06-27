@@ -8,7 +8,7 @@ Authors: sunerok, bitspill & whit3water
 
 Language: Python
 
-Homepage: http://electrum-pkb.space/
+Homepage: http://electrum-pkb.net/
 
 
 1.a) GETTING STARTED WITH UBUNTU/LINUX
@@ -29,7 +29,7 @@ To run Electrum from this directory, just do:
 
 To start Electrum from your web browser, see
 --------------------------------------------
-http://electrum-pkb.space/parkbyte_URIs.html
+http://electrum-pkb.net/parkbyte_URIs.html
 
 To update your copy of the electrum client:
 -------------------------------------------
@@ -85,4 +85,4 @@ On Mac OS X:
   sudo hdiutil create -fs HFS+ -volname "Electrum-PKB" -srcfolder dist/Electrum-PKB.app dist/electrum-pkb-VERSION-macosx.dmg
 
 
-[![Visit our IRC Chat!](https://kiwiirc.com/buttons/irc.freenode.net/parkbyte.png)](https://kiwiirc.com/client/irc.freenode.net/?nick=pkb|?&theme=cli#parkbyte)
+[![Visit our IRC Chat!](https://kiwiirc.com/buttons/irc.freenode.net/parkbyte.png)](https://kiwiirc.com/client/irc.freenode.net/?nick=pkb|?&theme=cli#electrumpkb)
