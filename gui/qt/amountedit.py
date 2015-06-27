@@ -27,7 +27,7 @@ class AmountEdit(MyLineEdit):
         self.help_palette = QPalette()
 
     def decimal_point(self):
-        return 6
+        return 8
 
     def numbify(self):
         text = unicode(self.text()).strip()
