@@ -90,13 +90,13 @@ class Blockchain(util.DaemonThread):
 
             prev_hash = self.hash_header(prev_header)
             bits, target = self.get_target(height/2016, chain)
-            _hash = self.pow_hash_header(header)
+            _hash = self.hash_header(header)
             try:
                 assert prev_hash == header.get('prev_block_hash')
                 assert bits == header.get('bits')
                 assert int('0x'+_hash,16) < target
             except Exception:
-                return False
+                return Fals
 
             prev_header = header
 
@@ -122,7 +122,7 @@ class Blockchain(util.DaemonThread):
             height = index*2016 + i
             raw_header = data[i*80:(i+1)*80]
             header = self.header_from_string(raw_header)
-            _hash = self.pow_hash_header(header)
+            _hash = self.hash_header(header)
             assert previous_hash == header.get('prev_block_hash')
             assert bits == header.get('bits')
             assert int('0x'+_hash,16) < target
