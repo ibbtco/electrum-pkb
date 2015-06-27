@@ -7,7 +7,7 @@ from electrum_pkb.network import filter_protocol, parse_servers
 def get_peers():
     # 1. start interface and wait for connection
     q = Queue.Queue()
-    interface = electrum.Interface('electrum-pkb.space:50002:s', q)
+    interface = electrum.Interface('electrum-pkb.net:50001:s', q)
     interface.start()
     i, r = q.get()
     if not interface.is_connected():
