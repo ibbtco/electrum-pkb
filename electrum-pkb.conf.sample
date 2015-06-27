@@ -12,7 +12,7 @@ gap_limit = 5
 # booleans use python syntax
 use_change = True
 gui = qt
-num_zeros = 2
+num_zeros = 8
 # default transaction fee is in Satoshis
-fee = 100000000
+fee = 1000
 winpos-qt = [799, 226, 877, 435]
