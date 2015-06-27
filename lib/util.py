@@ -190,7 +190,7 @@ def age(from_date, since_date = None, target_tz=None, include_seconds=False):
 
 block_explorer_info = {
     'chainz.cryptoid.info/pkb/': ('https://chainz.cryptoid.info/pkb/',
-                        {'tx': 'tx.dws', 'addr': 'address.dws'}),
+                        {'tx': 'tx.dws?', 'addr': 'address.dws?'}),
 }
 
 def block_explorer(config):
@@ -207,7 +207,7 @@ def block_explorer_URL(config, kind, item):
     if not kind_str:
         return
     url_parts = [be_tuple[0], kind_str, item]
-    return "?".join(url_parts)
+    return "/".join(url_parts)
 
 # URL decode
 #_ud = re.compile('%([0-9a-hA-H]{2})', re.MULTILINE)
