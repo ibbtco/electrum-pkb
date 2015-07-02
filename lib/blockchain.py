@@ -96,7 +96,7 @@ class Blockchain(util.DaemonThread):
                 assert bits == header.get('bits')
                 assert int('0x'+_hash,16) < target
             except Exception:
-                return Fals
+                return False
 
             prev_header = header
 
